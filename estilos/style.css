@@ -16,10 +16,6 @@
     box-sizing: border-box;
 }
 
-body {
-    padding-bottom: 500px;
-}
-
 /* Event Form */
 
 #event-description {
@@ -214,4 +210,112 @@ body {
 .detail {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 4em;
 }
+
+.detail img {
+    width: 50%;
+}
+
+.detail h3 {
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#detail-1 h3 {
+    font-size: 3em;
+    font-weight: bold;            /*estilo sobre id, sobreescreve outras valores ja colocados*/
+}
+
+.detail-description {
+    width: 100%;
+    padding-left: 2em;
+}
+
+.detail-description ul {
+    list-style-position: inside; /*ponto da lista fica alinhado ao titulo */ 
+}
+
+.detail-description ul li {
+    margin-bottom: 0.4em;
+}
+
+.detail-description ul li:last-child {
+    font-weight:  bold; /*ultimo elemento de todas as listas*/
+}
+
+/* call to action section */
+
+#cta {
+    height: 300px;
+    background: linear-gradient(rgba(0,0,0,.8), Rgba(0,0,0,.8)), url(../img/hrz-1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+}
+
+#cta h3 {
+    margin-bottom: 1.2em;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#cta .btn {
+    width: 30%;
+    margin: 0 auto; /*como foi definida a largura se torna necessario centralizar*/
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+
+/* footer */
+
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location-frame {
+    height: 300px;
+    margin: 20px 0;
+    border-radius: 5px;
+    padding-right: 4em;
+    width: 750px;    
+}
+
+#footer .footer-sobre { 
+    text-align: center;
+    color: var(--secondary);
+    height: 280px;
+    margin-left: 12%;
+    margin-top: 9em;
+}
+
+#footer h3 {
+    font-size: 1.8em;
+    margin-bottom: .5em;
+}
+
+#footer p:nth-child(2){
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+
+.p-copy {
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
